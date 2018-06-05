@@ -3,16 +3,16 @@
 #include "action_layer.h"
 #include "version.h"
 
-#define BASE 0 // default layer
-#define WIND 1 // symbols
-#define SYMB 2 // media keys
-#define NUMP 3 // media keys
-#define NAVI 4 // media keys
-#define GAME 5 // media keys
-#define BLAN 6 // media keys
+#define BASE 0
+#define WIND 1
+#define SYMB 2
+#define NUMP 3
+#define NAVI 4
+#define GAME 5
+#define BLAN 6
 
 enum custom_keycodes {
-  PLACEHOLDER = SAFE_RANGE, // can aways be here
+  PLACEHOLDER = SAFE_RANGE,
   CK_RARW,
   CK_RFRW,
 };
@@ -315,19 +315,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 };
 
-// Runs just one time when the keyboard initializes.
 void matrix_init_user(void) {
 #ifdef RGBLIGHT_COLOR_LAYER_0
   rgblight_setrgb(RGBLIGHT_COLOR_LAYER_0);
 #endif
 };
 
-// Runs constantly in the background, in a loop.
 void matrix_scan_user(void) {
 
 };
 
-// Runs whenever there is a layer state change.
 uint32_t layer_state_set_user(uint32_t state) {
   ergodox_board_led_off();
   ergodox_right_led_1_off();
