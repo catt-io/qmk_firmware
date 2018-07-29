@@ -17,7 +17,6 @@ enum custom_keycodes {
   CK_RFRW,
 };
 
-#define SS_ALFR LALT(KC_SPC)
 #define SS_SPOT LGUI(KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -25,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | L4     |  F1  |  F2  |  F3  |  F4  |  F5  | F11  |           | F12  |  F6  |  F7  |  F8  |  F9  |  F0  |  L4    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | L3     |   Q  |   W  |   F  |   P  |   G  |Alfred|           |  Up  |   J  |   L  |   U  |   Y  |   '  |  L3    |
+ * | L3     |   Q  |   W  |   F  |   P  |   G  |Search|           |  Up  |   J  |   L  |   U  |   Y  |   '  |  L3    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | L2     |   A  |   R  |   S  |   T  |   D  |------|           |------|   H  |   N  |   E  |   I  |   O  |  L2    |
  * |--------+------+------+------+------+------| Tab  |           | Down |------+------+------+------+------+--------|
@@ -43,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [BASE] = LAYOUT_ergodox(
         MO(NAVI),KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,
-        MO(NUMP),KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    SS_ALFR,
+        MO(NUMP),KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    SS_SPOT,
         MO(SYMB),KC_A,    KC_R,    KC_S,    KC_T,    KC_D,
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_TAB,
         KC_LGUI, KC_LGUI, KC_LGUI, KC_LALT, KC_LCTL,
@@ -64,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |  LGui  |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
+ * |        |      |      |      |      |      | LGui |           |      |      |      |      |      |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        |      |      |      |      |      |------|           |------|      |      |      |      |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -82,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [WIND] = LAYOUT_ergodox(
         KC_LGUI, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LGUI,
         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
         KC_LALT, KC_LCTL, KC_TRNS, KC_TRNS, KC_TRNS,
