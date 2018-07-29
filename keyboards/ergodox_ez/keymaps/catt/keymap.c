@@ -17,7 +17,7 @@ enum custom_keycodes {
   CK_RFRW,
 };
 
-#define _______ KC_TRNS
+#define _______ KC_TRNS 
 #define SS_ALFR LALT(KC_SPC)
 #define SS_SPOT LGUI(KC_SPC)
 
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MO(SYMB),KC_A,    KC_R,    KC_S,    KC_T,    KC_D,
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_TAB,
         KC_LGUI, KC_LGUI, KC_LGUI, KC_LALT, KC_LCTL,
-                                                     KC_HYPR, KC_TRNS,
+                                                     KC_HYPR, _______,
                                                               TG(GAME),
                                             KC_SPC,  KC_ESC,  KC_MEH,
 
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    MO(SYMB),
         KC_DOWN, KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SCLN, KC_RSFT,
                           KC_RCTL, KC_RALT, KC_RGUI, KC_RGUI, KC_RGUI,
-        KC_TRNS, KC_HYPR,
+        _______, KC_HYPR,
         TG(WIND),
         KC_MEH,  KC_ENT,  KC_BSPC
 ),
@@ -82,23 +82,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
 [WIND] = LAYOUT_ergodox(
-        KC_LGUI, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LGUI,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_LALT, KC_LCTL, KC_TRNS, KC_TRNS, KC_TRNS,
-                                                     KC_TRNS, KC_TRNS,
-                                                              KC_TRNS,
-                                            KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_LGUI, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, KC_LGUI,
+        _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        KC_LALT, KC_LCTL, _______, _______, _______,
+                                                     _______, _______,
+                                                              _______,
+                                            _______, _______, _______,
 
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                          KC_TRNS, KC_TRNS, KC_TRNS, KC_RCTL, KC_RALT,
-        KC_TRNS, KC_TRNS,
-        KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                 _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                          _______, _______, _______, KC_RCTL, KC_RALT,
+        _______, _______,
+        _______,
+        _______, _______, _______
 ),
 /* 
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -121,23 +121,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
 [SYMB] = LAYOUT_ergodox(
-        KC_TRNS, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_TRNS,
-        KC_TRNS, KC_DLR,  KC_HASH, KC_AT,   KC_GRAVE,KC_TILD, KC_TRNS,
-        KC_TRNS, KC_LABK, KC_LBRC, KC_LCBR, KC_LPRN, KC_QUES,
-        KC_TRNS, KC_RABK, KC_RBRC, KC_RCBR, KC_RPRN, CK_RARW, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, CK_RFRW,
-                                                     KC_TRNS, KC_TRNS,
-                                                              KC_TRNS,
-                                            KC_TRNS, KC_TRNS, KC_TRNS,
+        _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    _______,
+        _______, KC_DLR,  KC_HASH, KC_AT,   KC_GRAVE,KC_TILD, _______,
+        _______, KC_LABK, KC_LBRC, KC_LCBR, KC_LPRN, KC_QUES,
+        _______, KC_RABK, KC_RBRC, KC_RCBR, KC_RPRN, CK_RARW, _______,
+        _______, _______, _______, _______, CK_RFRW,
+                                                     _______, _______,
+                                                              _______,
+                                            _______, _______, _______,
 
-        KC_TRNS, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_TRNS,
-        KC_LEFT, KC_TRNS, KC_PIPE, KC_PERC, KC_CIRC, KC_DQUO, KC_TRNS,
-                 KC_EXLM, KC_PLUS, KC_ASTR, KC_EQL,  KC_UNDS, KC_TRNS,
-        KC_RIGHT,KC_AMPR, KC_MINS, KC_SLSH, KC_BSLS, KC_COLN, KC_TRNS,
-                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS,
-        KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_DEL
+        _______, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
+        KC_LEFT, _______, KC_PIPE, KC_PERC, KC_CIRC, KC_DQUO, _______,
+                 KC_EXLM, KC_PLUS, KC_ASTR, KC_EQL,  KC_UNDS, _______,
+        KC_RIGHT,KC_AMPR, KC_MINS, KC_SLSH, KC_BSLS, KC_COLN, _______,
+                          _______, _______, _______, _______, _______,
+        _______, _______,
+        _______,
+        _______, _______, KC_DEL
 ),
 /* 
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -160,23 +160,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
 [NUMP] = LAYOUT_ergodox(
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_UP,   KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN, KC_RIGHT, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                                                     KC_TRNS, KC_TRNS,
-                                                              KC_TRNS,
-                                            KC_TRNS, KC_TRNS, KC_TRNS,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, KC_UP,   _______, _______, _______,
+        _______, _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______,
+                                                     _______, _______,
+                                                              _______,
+                                            _______, _______, _______,
 
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_1,    KC_2,    KC_3,    KC_HASH, KC_TRNS,
-                 KC_DOT,  KC_4,    KC_5,    KC_6,    KC_0,    KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_7,    KC_8,    KC_9,    KC_DLR,  KC_TRNS,
-                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS,
-        KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, KC_1,    KC_2,    KC_3,    KC_HASH, _______,
+                 KC_DOT,  KC_4,    KC_5,    KC_6,    KC_0,    _______,
+        _______, _______, KC_7,    KC_8,    KC_9,    KC_DLR,  _______,
+                          _______, _______, _______, _______, _______,
+        _______, _______,
+        _______,
+        _______, _______, _______
 ),
 /* 
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -199,23 +199,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
 [NAVI] = LAYOUT_ergodox(
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                                                     KC_TRNS, KC_TRNS,
-                                                              KC_TRNS,
-                                            KC_TRNS, KC_TRNS, KC_TRNS,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______,
+                                                     _______, _______,
+                                                              _______,
+                                            _______, _______, _______,
 
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS,
-        KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                 _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                          _______, _______, _______, _______, _______,
+        _______, _______,
+        _______,
+        _______, _______, _______
 ),
 /* 
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -238,23 +238,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
 [GAME] = LAYOUT_ergodox(
-        KC_TRNS, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_ESC,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_L,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                                                     KC_TRNS, KC_TRNS,
-                                                              KC_TRNS,
-                                            KC_TRNS, KC_J,    KC_TRNS,
+        _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_ESC,
+        _______, _______, _______, _______, _______, _______, KC_L,
+        _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______,
+                                                     _______, _______,
+                                                              _______,
+                                            _______, KC_J,    _______,
 
-        KC_TRNS, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS,
-        KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS
+        _______, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                 _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                          _______, _______, _______, _______, _______,
+        _______, _______,
+        _______,
+        _______, _______, _______
 ),
 /* 
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -277,23 +277,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
 [BLAN] = LAYOUT_ergodox(
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                                                     KC_TRNS, KC_TRNS,
-                                                              KC_TRNS,
-                                            KC_TRNS, KC_TRNS, KC_TRNS,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______,
+                                                     _______, _______,
+                                                              _______,
+                                            _______, _______, _______,
 
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS,
-        KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                 _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                          _______, _______, _______, _______, _______,
+        _______, _______,
+        _______,
+        _______, _______, _______
 ),
 };
 
