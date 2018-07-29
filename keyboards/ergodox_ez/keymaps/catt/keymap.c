@@ -17,6 +17,8 @@ enum custom_keycodes {
   CK_RFRW,
 };
 
+#define _______ KC_TRNS
+#define SS_ALFR LALT(KC_SPC)
 #define SS_SPOT LGUI(KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -102,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |        |   1  |   2  |   3  |   4  |   5  |      |           |      |   6  |   7  |   8  |   9  |   0  |        |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |        |   $  |   #  |   @  |   `  |   ~  |      |           | Left |      |   |  |   %  |   ^  |      |        |
+ * |        |   $  |   #  |   @  |   `  |   ~  |      |           | Left |      |   |  |   %  |   ^  |   "  |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        |   <  |   [  |   {  |   (  |   ?  |------|           |------|   !  |   +  |   *  |   =  |   _  |        |
  * |--------+------+------+------+------+------|      |           |Right |------+------+------+------+------+--------|
@@ -129,7 +131,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                             KC_TRNS, KC_TRNS, KC_TRNS,
 
         KC_TRNS, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_TRNS,
-        KC_LEFT, KC_TRNS, KC_PIPE, KC_PERC, KC_CIRC, KC_TRNS, KC_TRNS,
+        KC_LEFT, KC_TRNS, KC_PIPE, KC_PERC, KC_CIRC, KC_DQUO, KC_TRNS,
                  KC_EXLM, KC_PLUS, KC_ASTR, KC_EQL,  KC_UNDS, KC_TRNS,
         KC_RIGHT,KC_AMPR, KC_MINS, KC_SLSH, KC_BSLS, KC_COLN, KC_TRNS,
                           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
@@ -153,7 +155,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        |      |      |       |      |      |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      |      |       |      |        |      |
- *                                 |      |      |------|       |------|        | Del  |
+ *                                 |      |      |------|       |------|        |      |
  *                                 |      |      |      |       |      |        |      |
  *                                 `--------------------'       `----------------------'
  */
@@ -174,7 +176,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
         KC_TRNS, KC_TRNS,
         KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_DEL
+        KC_TRNS, KC_TRNS, KC_TRNS
 ),
 /* 
  * ,--------------------------------------------------.           ,--------------------------------------------------.
