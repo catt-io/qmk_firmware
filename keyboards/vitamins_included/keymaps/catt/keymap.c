@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   MO(NUMP),        KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, MO(NUMP), \
   MO(SYMB),        KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    MO(SYMB), \
   KC_LSFT,         KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SCLN, KC_RSFT , \
-  RESET,           KC_LGUI, KC_LGUI, KC_LALT, KC_LCTL, KC_SPC,  KC_BSPC, KC_RCTL, KC_RALT, KC_RGUI, KC_RGUI, RESET \
+  KC_MEH,          KC_LGUI, KC_LGUI, KC_LALT, KC_LCTL, KC_SPC,  KC_BSPC, KC_RCTL, KC_RALT, KC_RGUI, KC_RGUI, KC_MEH    \
 ),
 
 [WIND] = LAYOUT_ortho_4x12( \
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______,         KC_DLR,  KC_HASH, KC_AT,   KC_GRAVE,KC_TILD, _______, KC_PIPE, KC_PERC, KC_CIRC, KC_DQUO, _______, \
   _______,         KC_LABK, KC_LBRC, KC_LCBR, KC_LPRN, KC_QUES, KC_EXLM, KC_PLUS, KC_ASTR, KC_EQL,  KC_UNDS, _______, \
   _______,         KC_RABK, KC_RBRC, KC_RCBR, KC_RPRN, KC_TAB,  KC_AMPR, KC_MINS, KC_SLSH, KC_BSLS, KC_COLN, _______, \
-  _______,         _______, _______, KC_HYPR, KC_MEH,  KC_ESC,  KC_ENT,  KC_MEH,  KC_HYPR, _______, _______, _______ \
+  RESET,           _______, _______, _______, KC_UP,   KC_ESC,  KC_ENT,  KC_DOWN, _______, _______, _______, RESET \
 ),
 
 [NUMP] = LAYOUT_ortho_4x12( \
